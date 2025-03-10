@@ -22,6 +22,7 @@ For detailed information about the NYT Best Sellers API, please refer to the off
 - **Data Handling:** Utilizes Spatie's Laravel Data package for data transfer objects.
 
 - **Testing:** Includes feature and unit tests to ensure the endpoint returns the correct structure and data.
+- **Code quality:** Installed rector and phpstan to keep code in check.
 
 ## Possible improvements
 

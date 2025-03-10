@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Exceptions\NYTimesBooks;
 
+use Throwable;
 use Exception;
 
 abstract class ApiException extends Exception
@@ -14,28 +15,22 @@ abstract class ApiException extends Exception
     protected ?int $statusCode;
     
     /**
-     * @var array|null The response data from the API
-     */
-    protected ?array $responseData;
-    
-    /**
      * Create a new API exception instance.
      *
      * @param string $message The exception message
      * @param int|null $statusCode The HTTP status code
      * @param array|null $responseData The response data from the API
-     * @param \Throwable|null $previous Previous exception if applicable
+     * @param Throwable|null $previous Previous exception if applicable
      */
     public function __construct(
         string $message,
         ?int $statusCode = null,
-        ?array $responseData = null,
-        ?\Throwable $previous = null
+        protected ?array $responseData = null,
+        ?Throwable $previous = null
     ) {
         parent::__construct($message, $statusCode ?? 0, $previous);
         
         $this->statusCode = $statusCode;
-        $this->responseData = $responseData;
     }
 
     /**

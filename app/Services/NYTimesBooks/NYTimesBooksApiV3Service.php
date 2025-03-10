@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Services\NYTimesBooks;
 
+use Exception;
 use App\Contracts\NYTimesBooksApiInterface;
 use App\Exceptions\NYTimesBooks\ApiAuthenticationException;
 use App\Exceptions\NYTimesBooks\ApiException;
@@ -38,7 +39,7 @@ class NYTimesBooksApiV3Service implements NYTimesBooksApiInterface
             return $response->json();
         } catch (ApiAuthenticationException | ApiRateLimitException | ApiNotFoundException $e) {
             throw $e;
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             Log::error('NY Times Books API error: ' . $e->getMessage());
             throw new ApiException(
                 message: 'An error occurred while communicating with the NY Times Books API.',

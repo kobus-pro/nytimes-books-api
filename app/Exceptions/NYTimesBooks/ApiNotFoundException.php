@@ -4,13 +4,10 @@ declare(strict_types=1);
 
 namespace App\Exceptions\NYTimesBooks;
 
+use Throwable;
+
 class ApiNotFoundException extends ApiException
 {
-    /**
-     * @var string|null The resource that was not found
-     */
-    protected ?string $resource = null;
-
     /**
      * @var string|null The error code from the API
      */
@@ -23,18 +20,16 @@ class ApiNotFoundException extends ApiException
      * @param ?string $resource The resource that was not found
      * @param int|null $statusCode The HTTP status code
      * @param array|null $responseData The response data from the API
-     * @param \Throwable|null $previous Previous exception if applicable
+     * @param Throwable|null $previous Previous exception if applicable
      */
     public function __construct(
         string $message = 'Resource not found in NY Times API',
-        ?string $resource = null,
+        protected ?string $resource = null,
         ?int $statusCode = 404,
         ?array $responseData = null,
-        ?\Throwable $previous = null
+        ?Throwable $previous = null
     ) {
         parent::__construct($message, $statusCode, $responseData, $previous);
-        
-        $this->resource = $resource;
         
         if ($this->resource === null) {
             if (isset($responseData['url'])) {

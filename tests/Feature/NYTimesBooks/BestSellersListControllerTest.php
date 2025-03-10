@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Tests\NYTimesBooks\Feature;
 
+use Generator;
 use App\Contracts\NYTimesBooksApiInterface;
 use Illuminate\Http\Response as HttpResponse;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -101,7 +102,7 @@ class BestSellersListControllerTest extends TestCase
         $response->assertStatus(HttpResponse::HTTP_OK);
     }
 
-    public static function responseProvider(): \Generator
+    public static function responseProvider(): Generator
     {
         yield 'empty' => [
             GetBestSellerHistoryResponse::EMPTY_RESPONSE,

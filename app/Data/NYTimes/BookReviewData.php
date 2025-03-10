@@ -14,9 +14,9 @@ class BookReviewData extends Data
         public ?string $bookReviewLink,
         #[MapInputName('first_chapter_link')]
         public ?string $firstChapterLink,
-        #[MapInputName('sunday_review_link')]
-        public ?string $sundayReviewLink = '',
         #[MapInputName('article_chapter_link')]
         public ?string $articleChapterLink,
+        #[MapInputName('sunday_review_link')]
+        public ?string $sundayReviewLink = '',
     ) {}
 }

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Exceptions\NYTimesBooks;
 
+use Throwable;
+
 class ApiRateLimitException extends ApiException
 {
     /**
@@ -17,13 +19,13 @@ class ApiRateLimitException extends ApiException
      * @param string $message The exception message
      * @param int|null $statusCode The HTTP status code
      * @param array|null $responseData The response data from the API
-     * @param \Throwable|null $previous Previous exception if applicable
+     * @param Throwable|null $previous Previous exception if applicable
      */
     public function __construct(
         string $message = 'Rate limit exceeded for NY Times API',
         ?int $statusCode = 429,
         ?array $responseData = null,
-        ?\Throwable $previous = null
+        ?Throwable $previous = null
     ) {
         parent::__construct($message, $statusCode, $responseData, $previous);
         

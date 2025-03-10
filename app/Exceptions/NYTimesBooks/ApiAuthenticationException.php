@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Exceptions\NYTimesBooks;
 
+use Throwable;
+
 class ApiAuthenticationException extends ApiException
 {
     /**
@@ -12,13 +14,13 @@ class ApiAuthenticationException extends ApiException
      * @param string $message Error message
      * @param int $statusCode HTTP status code
      * @param array|null $responseData Response data from the API
-     * @param \Throwable|null $previous Previous exception if applicable
+     * @param Throwable|null $previous Previous exception if applicable
      */
     public function __construct(
         string $message = 'Authentication failed with NY Times API',
         int $statusCode = 401,
         ?array $responseData = null,
-        ?\Throwable $previous = null
+        ?Throwable $previous = null
     ) {
         parent::__construct($message, $statusCode, $responseData, $previous);
     }

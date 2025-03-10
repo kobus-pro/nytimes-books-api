@@ -1,0 +1,50 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2025 The New York Times Company.  All Rights Reserved.",
+    "count": 1,
+    "items": [
+        {
+            "title": "1,000 PLACES TO SEE BEFORE YOU DIE",
+            "description": "A guide for traveling the world; second edition updated with new entries.",
+            "contributor": "by Patricia Schultz",
+            "author": "Patricia Schultz",
+            "contributorNote": "",
+            "price": "0.00",
+            "ageGroup": "",
+            "publisher": "Workman",
+            "isbns": [
+                {
+                    "isbn10": "0761156860",
+                    "isbn13": "9780761156864"
+                },
+                {
+                    "isbn10": "0761104844",
+                    "isbn13": "9780761104841"
+                }
+            ],
+            "ranksHistory": [
+                {
+                    "primaryIsbn10": "0761156860",
+                    "primaryIsbn13": "9780761156864",
+                    "rank": 10,
+                    "listName": "Travel",
+                    "displayName": "Travel",
+                    "publishedDate": "2015-04-12",
+                    "bestsellersDate": "2015-03-28",
+                    "weeksOnList": 0,
+                    "rankLastWeek": 0,
+                    "asterisk": 0,
+                    "dagger": 0
+                }
+            ],
+            "reviews": [
+                {
+                    "bookReviewLink": "",
+                    "firstChapterLink": "",
+                    "sundayReviewLink": "",
+                    "articleChapterLink": ""
+                }
+            ]
+        }
+    ]
+}

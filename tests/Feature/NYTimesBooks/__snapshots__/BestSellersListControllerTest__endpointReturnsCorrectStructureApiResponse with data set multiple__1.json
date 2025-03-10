@@ -1,0 +1,231 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2025 The New York Times Company.  All Rights Reserved.",
+    "count": 5,
+    "items": [
+        {
+            "title": "100 BULLETS, VOL. 13",
+            "description": "No spoilers! The noir series, about vengeance and violence, reaches its conclusion.",
+            "contributor": "by Brian Azzarello and Eduardo Risso",
+            "author": "Brian Azzarello and Eduardo Risso",
+            "contributorNote": "",
+            "price": "19.99",
+            "ageGroup": "",
+            "publisher": "Vertigo",
+            "isbns": [],
+            "ranksHistory": [
+                {
+                    "primaryIsbn10": "1401222870",
+                    "primaryIsbn13": "9781401222871",
+                    "rank": 2,
+                    "listName": "Paperback Graphic Books",
+                    "displayName": "Paperback Graphic Books",
+                    "publishedDate": "2009-08-02",
+                    "bestsellersDate": "2009-07-18",
+                    "weeksOnList": 2,
+                    "rankLastWeek": 10,
+                    "asterisk": 0,
+                    "dagger": 0
+                },
+                {
+                    "primaryIsbn10": "1401222870",
+                    "primaryIsbn13": "9781401222871",
+                    "rank": 10,
+                    "listName": "Paperback Graphic Books",
+                    "displayName": "Paperback Graphic Books",
+                    "publishedDate": "2009-07-26",
+                    "bestsellersDate": "2009-07-11",
+                    "weeksOnList": 1,
+                    "rankLastWeek": 0,
+                    "asterisk": 0,
+                    "dagger": 0
+                }
+            ],
+            "reviews": [
+                {
+                    "bookReviewLink": "",
+                    "firstChapterLink": "",
+                    "sundayReviewLink": "",
+                    "articleChapterLink": ""
+                }
+            ]
+        },
+        {
+            "title": "100 BULLETS: BOOK ONE",
+            "description": "This deluxe edition of the noir series, about a man named Graves who gives wronged people an untraceable gun to exact revenge, collects issues 1 through 19.",
+            "contributor": "by Brian Azzarello and Eduardo Risso",
+            "author": "Brian Azzarello and Eduardo Risso",
+            "contributorNote": "",
+            "price": "49.99",
+            "ageGroup": "",
+            "publisher": "DC Comics",
+            "isbns": [
+                {
+                    "isbn10": "1401232019",
+                    "isbn13": "9781401232016"
+                }
+            ],
+            "ranksHistory": [
+                {
+                    "primaryIsbn10": "1401232019",
+                    "primaryIsbn13": "9781401232016",
+                    "rank": 8,
+                    "listName": "Hardcover Graphic Books",
+                    "displayName": "Hardcover Graphic Books",
+                    "publishedDate": "2011-11-13",
+                    "bestsellersDate": "2011-10-29",
+                    "weeksOnList": 2,
+                    "rankLastWeek": 0,
+                    "asterisk": 0,
+                    "dagger": 0
+                },
+                {
+                    "primaryIsbn10": "1401232019",
+                    "primaryIsbn13": "9781401232016",
+                    "rank": 6,
+                    "listName": "Hardcover Graphic Books",
+                    "displayName": "Hardcover Graphic Books",
+                    "publishedDate": "2011-11-06",
+                    "bestsellersDate": "2011-10-22",
+                    "weeksOnList": 1,
+                    "rankLastWeek": 0,
+                    "asterisk": 0,
+                    "dagger": 0
+                }
+            ],
+            "reviews": [
+                {
+                    "bookReviewLink": "",
+                    "firstChapterLink": "",
+                    "sundayReviewLink": "",
+                    "articleChapterLink": ""
+                }
+            ]
+        },
+        {
+            "title": "100 BULLETS: DELUXE EDITION, BOOK FOUR",
+            "description": "This deluxe edition of the noir series, about a man named Graves who gives wronged people an untraceable gun to exact revenge, collects issues 59 through 80.",
+            "contributor": "by Brian Azzarello and Eduardo Risso",
+            "author": "Brian Azzarello and Eduardo Risso",
+            "contributorNote": "",
+            "price": "0.00",
+            "ageGroup": "",
+            "publisher": "DC Comics",
+            "isbns": [
+                {
+                    "isbn10": "1401238076",
+                    "isbn13": "9781401238070"
+                }
+            ],
+            "ranksHistory": [
+                {
+                    "primaryIsbn10": "1401238076",
+                    "primaryIsbn13": "9781401238070",
+                    "rank": 4,
+                    "listName": "Hardcover Graphic Books",
+                    "displayName": "Hardcover Graphic Books",
+                    "publishedDate": "2013-05-26",
+                    "bestsellersDate": "2013-05-11",
+                    "weeksOnList": 4,
+                    "rankLastWeek": 0,
+                    "asterisk": 0,
+                    "dagger": 0
+                },
+                {
+                    "primaryIsbn10": "1401238076",
+                    "primaryIsbn13": "9781401238070",
+                    "rank": 9,
+                    "listName": "Hardcover Graphic Books",
+                    "displayName": "Hardcover Graphic Books",
+                    "publishedDate": "2013-05-19",
+                    "bestsellersDate": "2013-05-04",
+                    "weeksOnList": 3,
+                    "rankLastWeek": 0,
+                    "asterisk": 0,
+                    "dagger": 0
+                }
+            ],
+            "reviews": [
+                {
+                    "bookReviewLink": "",
+                    "firstChapterLink": "",
+                    "sundayReviewLink": "",
+                    "articleChapterLink": ""
+                }
+            ]
+        },
+        {
+            "title": "FLASHPOINT: BATMAN",
+            "description": "Batman is Thomas Wayne, whose son Bruce has died, and the parents of Dick Grayson are alive. This can only be an alternate universe.",
+            "contributor": "by Brian Azzarello and Eduardo Risso",
+            "author": "Brian Azzarello and Eduardo Risso",
+            "contributorNote": "",
+            "price": "17.99",
+            "ageGroup": "",
+            "publisher": "DC Comics",
+            "isbns": [],
+            "ranksHistory": [
+                {
+                    "primaryIsbn10": "None",
+                    "primaryIsbn13": "9781401234058",
+                    "rank": 10,
+                    "listName": "Paperback Graphic Books",
+                    "displayName": "Paperback Graphic Books",
+                    "publishedDate": "2012-04-08",
+                    "bestsellersDate": "2012-03-24",
+                    "weeksOnList": 1,
+                    "rankLastWeek": 0,
+                    "asterisk": 0,
+                    "dagger": 0
+                }
+            ],
+            "reviews": [
+                {
+                    "bookReviewLink": "",
+                    "firstChapterLink": "",
+                    "sundayReviewLink": "",
+                    "articleChapterLink": ""
+                }
+            ]
+        },
+        {
+            "title": "SPACEMAN: DELUXE EDITION",
+            "description": "The team behind \"100 Bullets\" tells the intersellar tale of Orson, a genetically engineered outcast looking for a better life.",
+            "contributor": "by Brian Azzarello and Eduardo Risso",
+            "author": "Brian Azzarello and Eduardo Risso",
+            "contributorNote": "",
+            "price": "24.99",
+            "ageGroup": "",
+            "publisher": "DC Comics",
+            "isbns": [
+                {
+                    "isbn10": "1401235522",
+                    "isbn13": "9781401235529"
+                }
+            ],
+            "ranksHistory": [
+                {
+                    "primaryIsbn10": "1401235522",
+                    "primaryIsbn13": "9781401235529",
+                    "rank": 5,
+                    "listName": "Hardcover Graphic Books",
+                    "displayName": "Hardcover Graphic Books",
+                    "publishedDate": "2012-12-02",
+                    "bestsellersDate": "2012-11-17",
+                    "weeksOnList": 1,
+                    "rankLastWeek": 0,
+                    "asterisk": 0,
+                    "dagger": 0
+                }
+            ],
+            "reviews": [
+                {
+                    "bookReviewLink": "",
+                    "firstChapterLink": "",
+                    "sundayReviewLink": "",
+                    "articleChapterLink": ""
+                }
+            ]
+        }
+    ]
+}

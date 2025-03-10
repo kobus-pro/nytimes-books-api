@@ -23,6 +23,8 @@
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
+        "nunomaduro/larastan": "^3.1",
+        "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^11.5.3",
         "rector/rector": "^2.0",
         "spatie/phpunit-snapshot-assertions": "^5.1"
@@ -60,7 +62,10 @@
             "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite"
         ],
         "rector": "vendor/bin/rector process",
-        "rector-dry": "vendor/bin/rector process --dry-run"    },
+        "rector-dry": "vendor/bin/rector process --dry-run",
+        "phpstan": "vendor/bin/phpstan analyse",
+        "phpstan:report": "vendor/bin/phpstan analyse --error-format=github"
+    },
     "extra": {
         "laravel": {
             "dont-discover": []

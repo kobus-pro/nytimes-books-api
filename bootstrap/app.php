@@ -53,7 +53,7 @@ return Application::configure(basePath: dirname(__DIR__))
                     $response['resource'] = $e->getResource();
                 }
                 
-                if (method_exists($e, 'getErrorCode') && $e->getErrorCode()) {
+                if ($e->getErrorCode()) {
                     $response['error_code'] = $e->getErrorCode();
                 }
                 

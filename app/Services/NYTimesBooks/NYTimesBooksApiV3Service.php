@@ -7,7 +7,7 @@ namespace App\Services\NYTimesBooks;
 use Exception;
 use App\Contracts\NYTimesBooksApiInterface;
 use App\Exceptions\NYTimesBooks\ApiAuthenticationException;
-use App\Exceptions\NYTimesBooks\ApiException;
+use App\Exceptions\NYTimesBooks\GeneralApiException;
 use App\Exceptions\NYTimesBooks\ApiNotFoundException;
 use App\Exceptions\NYTimesBooks\ApiRateLimitException;
 use Illuminate\Http\Client\Response;
@@ -41,7 +41,7 @@ class NYTimesBooksApiV3Service implements NYTimesBooksApiInterface
             throw $e;
         } catch (Exception $e) {
             Log::error('NY Times Books API error: ' . $e->getMessage());
-            throw new ApiException(
+            throw new GeneralApiException(
                 message: 'An error occurred while communicating with the NY Times Books API.',
                 statusCode: $e->getCode(),
                 previous: $e
@@ -56,7 +56,7 @@ class NYTimesBooksApiV3Service implements NYTimesBooksApiInterface
      * @throws ApiAuthenticationException
      * @throws ApiRateLimitException
      * @throws ApiNotFoundException
-     * @throws ApiException
+     * @throws GeneralApiException
      */
     protected function handleApiErrors(Response $response): void
     {
@@ -103,7 +103,7 @@ class NYTimesBooksApiV3Service implements NYTimesBooksApiInterface
                     responseData: $responseData
                 );
             default:
-                throw new ApiException(
+                throw new GeneralApiException(
                     message: "NY Times Books API error ({$statusCode}): {$errorMessage}",
                     statusCode: $statusCode,
                     responseData: $responseData

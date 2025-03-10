@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'nytimesbooks' => [
+        'base_url' => env('NYTIMES_API_URL', 'https://api.nytimes.com'),
+        'api_key' => env('NYTIMES_API_KEY'),
+        'version' => env('NYTIMES_API_VERSION', 'v3'),
+    ],    
 ];

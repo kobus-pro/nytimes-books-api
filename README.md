@@ -53,12 +53,18 @@ For detailed information about the NYT Best Sellers API, please refer to the off
 3. **Set up environment variables:**
    Copy the `.env.example` file to `.env` and update the necessary environment variables, including the NYT API key (`NYTIMES_API_KEY`). Generate app key - `php artisan key:generate`.
 
-4. **Run the application:**
+
+4. **Run migrations (default db is sqlite):**
+   ```sh
+   php artisan migrate
+   ```
+
+5. **Run the application:**
    ```sh
    php artisan serve
    ```
 
-5. **Run tests:**
+6. **Run tests:**
    ```sh
    php artisan test
    ```

@@ -7,8 +7,6 @@ namespace App\Exceptions\NYTimesBooks;
 class GeneralApiException extends ApiException
 {
     /**
-     * Get a user-friendly error message
-     *
      * @return string
      */
     public function getUserMessage(): string
@@ -17,8 +15,6 @@ class GeneralApiException extends ApiException
     }
 
     /**
-     * Get troubleshooting information to help resolve the issue
-     *
      * @return string
      */
     public function getTroubleshootingInfo(): string

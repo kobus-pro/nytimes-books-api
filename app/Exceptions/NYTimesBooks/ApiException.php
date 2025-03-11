@@ -10,17 +10,15 @@ use Exception;
 abstract class ApiException extends Exception
 {
     /**
-     * @var int|null The HTTP status code
+     * @var int|null
      */
     protected ?int $statusCode;
     
     /**
-     * Create a new API exception instance.
-     *
-     * @param string $message The exception message
-     * @param int|null $statusCode The HTTP status code
-     * @param array|null $responseData The response data from the API
-     * @param Throwable|null $previous Previous exception if applicable
+     * @param string $message
+     * @param int|null $statusCode
+     * @param array|null $responseData
+     * @param Throwable|null $previous
      */
     public function __construct(
         string $message,
@@ -34,8 +32,6 @@ abstract class ApiException extends Exception
     }
 
     /**
-     * Get the HTTP status code.
-     *
      * @return int|null
      */
     public function getStatusCode(): ?int
@@ -44,8 +40,6 @@ abstract class ApiException extends Exception
     }
 
     /**
-     * Get the response data.
-     *
      * @return array|null
      */
     public function getResponseData(): ?array
@@ -54,15 +48,11 @@ abstract class ApiException extends Exception
     }
 
     /**
-     * Get a user-friendly error message
-     *
      * @return string
      */
     abstract public function getUserMessage(): string;
 
     /**
-     * Get troubleshooting information to help resolve the issue
-     *
      * @return string
      */
     public function getTroubleshootingInfo(): string
@@ -71,8 +61,6 @@ abstract class ApiException extends Exception
     }
 
     /**
-     * Get detailed error information for developers
-     * 
      * @return array
      */
     public function getDetailedErrorInfo(): array

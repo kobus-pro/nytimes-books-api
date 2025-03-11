@@ -10,17 +10,12 @@ use Intervention\Validation\Rules\Isbn;
 
 class BestSellersListRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     */
     public function authorize(): bool
     {
         return true;
     }
 
     /**
-     * Get the validation rules that apply to the request.
-     *
      * @return array<string, ValidationRule|array<mixed>|string>
      */
     public function rules(): array
@@ -44,8 +39,6 @@ class BestSellersListRequest extends FormRequest
     }
 
     /**
-     * Get the validated data from the request.
-     *
      * @return array
      */
     public function validated($key = null, $default = null)

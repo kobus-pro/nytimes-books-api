@@ -9,12 +9,10 @@ use Throwable;
 class ApiAuthenticationException extends ApiException
 {
     /**
-     * Create a new API authentication exception
-     *
-     * @param string $message Error message
-     * @param int $statusCode HTTP status code
-     * @param array|null $responseData Response data from the API
-     * @param Throwable|null $previous Previous exception if applicable
+     * @param string $message
+     * @param int $statusCode
+     * @param array|null $responseData
+     * @param Throwable|null $previous
      */
     public function __construct(
         string $message = 'Authentication failed with NY Times API',
@@ -26,8 +24,6 @@ class ApiAuthenticationException extends ApiException
     }
 
     /**
-     * Get a user-friendly error message
-     *
      * @return string
      */
     public function getUserMessage(): string
@@ -36,8 +32,6 @@ class ApiAuthenticationException extends ApiException
     }
 
     /**
-     * Get troubleshooting information to help resolve the issue
-     *
      * @return string
      */
     public function getTroubleshootingInfo(): string
@@ -49,8 +43,6 @@ class ApiAuthenticationException extends ApiException
     }
 
     /**
-     * Get detailed error information for developers
-     * 
      * @return array
      */
     public function getDetailedErrorInfo(): array

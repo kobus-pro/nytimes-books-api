@@ -9,17 +9,15 @@ use Throwable;
 class ApiRateLimitException extends ApiException
 {
     /**
-     * @var int|null The number of seconds until the rate limit resets
+     * @var int|null
      */
     protected ?int $retryAfter = null;
 
     /**
-     * Create a new API rate limit exception instance.
-     *
-     * @param string $message The exception message
-     * @param int|null $statusCode The HTTP status code
-     * @param array|null $responseData The response data from the API
-     * @param Throwable|null $previous Previous exception if applicable
+     * @param string $message
+     * @param int|null $statusCode
+     * @param array|null $responseData
+     * @param Throwable|null $previous
      */
     public function __construct(
         string $message = 'Rate limit exceeded for NY Times API',
@@ -35,8 +33,6 @@ class ApiRateLimitException extends ApiException
     }
 
     /**
-     * Get the number of seconds until the rate limit resets.
-     *
      * @return int|null
      */
     public function getRetryAfter(): ?int
@@ -45,8 +41,6 @@ class ApiRateLimitException extends ApiException
     }
 
     /**
-     * Check if retry information is available.
-     *
      * @return bool
      */
     public function hasRetryAfter(): bool
@@ -55,8 +49,6 @@ class ApiRateLimitException extends ApiException
     }
     
     /**
-     * Get a user-friendly error message
-     *
      * @return string
      */
     public function getUserMessage(): string
@@ -71,8 +63,6 @@ class ApiRateLimitException extends ApiException
     }
     
     /**
-     * Get troubleshooting information to help resolve the issue
-     *
      * @return string
      */
     public function getTroubleshootingInfo(): string
@@ -84,8 +74,6 @@ class ApiRateLimitException extends ApiException
     }
     
     /**
-     * Get detailed error information for developers
-     * 
      * @return array
      */
     public function getDetailedErrorInfo(): array

@@ -9,18 +9,16 @@ use Throwable;
 class ApiNotFoundException extends ApiException
 {
     /**
-     * @var string|null The error code from the API
+     * @var string|null
      */
     protected ?string $errorCode = null;
 
     /**
-     * Create a new API not found exception instance.
-     *
-     * @param string $message The exception message
-     * @param ?string $resource The resource that was not found
-     * @param int|null $statusCode The HTTP status code
-     * @param array|null $responseData The response data from the API
-     * @param Throwable|null $previous Previous exception if applicable
+     * @param string $message
+     * @param ?string $resource
+     * @param int|null $statusCode
+     * @param array|null $responseData
+     * @param Throwable|null $previous
      */
     public function __construct(
         string $message = 'Resource not found in NY Times API',
@@ -52,8 +50,6 @@ class ApiNotFoundException extends ApiException
     }
 
     /**
-     * Get the resource that was not found.
-     *
      * @return string|null
      */
     public function getResource(): ?string
@@ -62,8 +58,6 @@ class ApiNotFoundException extends ApiException
     }
 
     /**
-     * Get the error code from the API.
-     *
      * @return string|null
      */
     public function getErrorCode(): ?string
@@ -72,8 +66,6 @@ class ApiNotFoundException extends ApiException
     }
 
     /**
-     * Check if resource information is available.
-     *
      * @return bool
      */
     public function hasResource(): bool
@@ -82,8 +74,6 @@ class ApiNotFoundException extends ApiException
     }
     
     /**
-     * Get a user-friendly error message
-     *
      * @return string
      */
     public function getUserMessage(): string
@@ -98,8 +88,6 @@ class ApiNotFoundException extends ApiException
     }
     
     /**
-     * Get troubleshooting information to help resolve the issue
-     *
      * @return string
      */
     public function getTroubleshootingInfo(): string
@@ -117,8 +105,6 @@ class ApiNotFoundException extends ApiException
     }
     
     /**
-     * Get detailed error information for developers
-     * 
      * @return array
      */
     public function getDetailedErrorInfo(): array

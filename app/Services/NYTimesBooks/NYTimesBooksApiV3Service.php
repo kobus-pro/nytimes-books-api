@@ -50,8 +50,6 @@ class NYTimesBooksApiV3Service implements NYTimesBooksApiInterface
     }
 
     /**
-     * Handle API error responses based on status codes
-     *
      * @param Response $response
      * @throws ApiAuthenticationException
      * @throws ApiRateLimitException

@@ -16,19 +16,19 @@ use Tests\TestCase;
 
 class NYTimesBooksApiV3ServiceTest extends TestCase
 {
-    protected NYTimesBooksApiV3Service $service;
-    protected $apiBaseUrl = 'https://api.nytimes.com';
-    protected $apiKey = 'test-api-key';
-    protected string $bestSellersHistoryPath;
+    private NYTimesBooksApiV3Service $service;
+    private $apiBaseUrl = 'https://api.nytimes.com';
+    private $apiKey = 'test-api-key';
+    private string $bestSellersHistoryPath;
 
     protected function setUp(): void
     {
         parent::setUp();
 
-        config()->set('services.nytimesbooks.base_url', $this->apiBaseUrl);
-        config()->set('services.nytimesbooks.api_key', $this->apiKey);
-
-        $this->service = new NYTimesBooksApiV3Service();
+        $this->service = new NYTimesBooksApiV3Service(
+            $this->apiBaseUrl,
+            $this->apiKey
+        );
 
         $reflector = new ReflectionClass(NYTimesBooksApiV3Service::class);
         $this->bestSellersHistoryPath = $reflector->getConstant('BEST_SELLERS_HISTORY_PATH');

@@ -6,5 +6,5 @@ namespace App\Contracts;
 
 interface NYTimesBooksApiInterface
 {
-    public function getBestSellerHistory(array $params = []);
+    public function getBestSellerHistory(array $params = []): array;
 }

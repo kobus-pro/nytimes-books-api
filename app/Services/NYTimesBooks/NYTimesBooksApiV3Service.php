@@ -11,23 +11,17 @@ use App\Exceptions\NYTimesBooks\GeneralApiException;
 use App\Exceptions\NYTimesBooks\ApiNotFoundException;
 use App\Exceptions\NYTimesBooks\ApiRateLimitException;
 use Illuminate\Http\Client\Response;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
-class NYTimesBooksApiV3Service implements NYTimesBooksApiInterface
+final readonly class NYTimesBooksApiV3Service implements NYTimesBooksApiInterface
 {
-    protected string $baseUrl;
-    protected string $apiKey;
+    private const string BEST_SELLERS_HISTORY_PATH = '/svc/books/v3/lists/best-sellers/history.json';
 
-    protected const BEST_SELLERS_HISTORY_PATH = '/svc/books/v3/lists/best-sellers/history.json';
+    public function __construct(private string $baseUrl, private string $apiKey) {}
 
-    public function __construct()
-    {
-        $this->baseUrl = config('services.nytimesbooks.base_url');
-        $this->apiKey = config('services.nytimesbooks.api_key');
-    }
-
-    public function getBestSellerHistory(array $params = [])
+    public function getBestSellerHistory(array $params = []): array
     {
         $url = $this->baseUrl . self::BEST_SELLERS_HISTORY_PATH;
 

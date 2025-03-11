@@ -3,15 +3,12 @@ parameters:
     paths:
         - app
         - bootstrap
-        - config
-        - database
         - routes
     excludePaths:
         - vendor
         - storage
         - bootstrap/cache
         - database/factories
-        - routes/console.php
 
     # Laravel specific settings
     scanDirectories:

@@ -25,16 +25,7 @@ class BestSellersListRequest extends FormRequest
             'isbns' => ['nullable', 'array'],
             'isbns.*' => ['string', new Isbn()],
             'title' => ['nullable', 'string'],
-            'offset' => [
-                'nullable',
-                'integer',
-                'min:0',
-                function ($attribute, $value, $fail) {
-                    if (is_numeric($value) && 0 !== $value % 20) {
-                        $fail('The ' . $attribute . ' must be a multiple of 20.');
-                    }
-                },
-            ],
+            'offset' => ['nullable', 'integer', 'min:0', 'multiple_of:20']
         ];
     }
 
